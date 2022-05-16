@@ -20,12 +20,23 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando com o DOM</h1>
+    <h1 id="title11">Iniciando com o DOM</h1>
     <p>Resultado...</p>
     <p><strong>DOM</strong> em JavaScript</p>
-    <div>Clique Aqui!</div>
+    <div class="mmss">Clique Aqui!</div>
     <script>
+        var corpo = document.body
+        var pp1 = document.getElementsByTagName('p')[1]
+        /*
+        var con = document.getElementById('mmss')
+        con.style.background = 'black'
+        //con.innerText = 'Clique Aqui!'
+        
+       var con = document.getElementsByClassName('mmss')[0]
+       con.innerText = 'olá, mundo'*/
 
+       var con = window.document.querySelector('div.mmss')
+       con.style.background = 'blue'
     </script>
 </body>
 </html>

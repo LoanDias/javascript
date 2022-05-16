@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM DOM DOM eventos</title>
+    <style>
+        #area {
+            font: normal 1.2em 'Courier New';
+            background-color: pink;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <p>Interaja...</p>
+    </div>
+    <script>
+        var aa = document.getElementById('area')
+        aa.addEventListener('click', clicar)
+        aa.addEventListener('mouseenter', entrar)
+        aa.addEventListener('mouseout', sair)
+        function entrar() {
+            aa.innerText = 'Entrou hein!'
+            aa.style.background = 'black'
+            aa.style.color = 'blue'
+        }
+        function clicar() {
+            aa.innerText = 'Clicou hein!'
+            aa.style.background = 'blue'
+            aa.style.color = 'black'
+        }
+        function sair() {
+            aa.innerText = 'Saiu hein!'
+            aa.style.background = 'pink'
+            aa.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
