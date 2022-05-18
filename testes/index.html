@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 0001</title>
+    <style>
+        div#resultado {
+            max-width: 200px;
+            text-align: center;
+            background-color: rgb(17, 94, 146);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    Digite um valor para saber sua Tabuada: <input type="number" name="n1" id="n1">
+    <input type="button" value="Resultado" onclick="clicar()">
+
+    <div id="resultado">
+        
+    </div>
+    <script>
+        function clicar() {
+            var n2 = document.getElementById('n1')
+            var res = document.getElementById('resultado')
+            var tn1 = Number(n2.value)
+            var n3 = tn1 * 1
+            var n4 = tn1 * 2
+            var n5 = tn1 * 3
+            var n6 = tn1 * 4
+            var n7 = tn1 * 5
+            var n8 = tn1 * 6
+            var n9 = tn1 * 7
+            var n10 = tn1 * 8
+            var n11 = tn1 * 9
+            var n12 = tn1 * 10
+            res.innerHTML = (`${tn1} x 01 = ${n3}`)
+            res.innerHTML += (`<p>${tn1} x 02 = ${n4}</p>`)
+            res.innerHTML += (`<p>${tn1} x 03 = ${n5}</p>`)
+            res.innerHTML += (`<p>${tn1} x 04 = ${n6}</p>`)
+            res.innerHTML += (`<p>${tn1} x 05 = ${n7}</p>`)
+            res.innerHTML += (`<p>${tn1} x 06 = ${n8}</p>`)
+            res.innerHTML += (`<p>${tn1} x 07 = ${n9}</p>`)
+            res.innerHTML += (`<p>${tn1} x 08 = ${n10}</p>`)
+            res.innerHTML += (`<p>${tn1} x 09 = ${n11}</p>`)
+            res.innerHTML += (`<p>${tn1} x 10 = ${n12}</p>`)
+        }
+    </script>
+</body>
+</html>
