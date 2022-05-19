@@ -1,5 +1,5 @@
-var n1 = 1
-while (n1 <= 6) {
-    console.log('Bom Dia')
-    c++
+var b = 1
+while (b <= 10) {
+    console.log('Olá')
+    b++   
 }
