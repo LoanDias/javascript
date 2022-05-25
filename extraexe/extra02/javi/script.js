@@ -1,3 +1,4 @@
+alert('ERRO NO GIMP, ARRUMA ESSA PORRA')
 function verificar() {
     var data = new Date()
     var ano = data.getFullYear()
@@ -19,7 +20,7 @@ function verificar() {
             } else if (idade < 10) {
                 //Criança
                 img.setAttribute('src', 'criança-m.png')
-            } else if (idade < 21) {
+            } else if (idade <= 21) {
                 //Jovem
                 img.setAttribute('src', 'jovem-m.png')
             } else if (idade < 50) {
