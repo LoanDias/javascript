@@ -15,10 +15,18 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#caixacentro {
-    background-color: white;
+img {
     width: 400px;
-    height: 400px;
+}
+
+div {
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.336);
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
     padding: 10px;
