@@ -9,14 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <article id="caixacentro">
-            <div id="caixa_dentro_cima">
-                
-            </div>
-            <div id="caixa_dentro_baixo">
-
+            <div id="cima">
+                <p>Digite o ano de nascimento:
+                    <input type="number" name="ano" id="ano"></p>
+                <p>Sexo: 
+                    <input type="radio" name="sex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" id="femi">
+                    <label for="femi">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            <div id="res">
+                O resultado aparecerá aqui!
             </div>
     </article>
     <footer>
