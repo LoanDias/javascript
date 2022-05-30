@@ -1,15 +1,21 @@
 function contar() {
-    var ini = document.getElementById('inicio')
-    var fim = document.getElementById('final')
-    //var pas = document.getElementById('passo')
-    var pas = 0
+    var start = document.getElementById('inicio')
+    var end = document.getElementById('final')
+    var step = document.getElementById('passo')
     var res = document.getElementById('resultado')
-    if (ini.value.lenght == 0 || Number(fim.value) == 0) {
-        res.innerHTML = 'Impossível contar'
-        alert('Por favor, verique se os campos foram preenchidos corretamente')
-    } else if (Number(pas.value) == 0){
-        alert('Passo inválido! Considerando Passo: 1')
-        for(var n1=Number(ini.value);n1<=Number(fim.value);n1++)
-        res.innerHTML = `Passo ${n1}`
+    var str = Number(start.value)
+    var ed = Number(end.value)
+    var stp = Number(step.value)
+    if (str < 0 || ed <= 0 || str == ed) {
+        alert('[ERRO] Verifique se os campos foram preenchidos corretamente!')
+    } else if (stp <=0) {
+        alert('[ERRO] Passo inválido, recalculando com o valor: 1')
+        for(var s = str;s <= ed; s++) {
+            res.innerHTML += `➡${s} `
+        }
+    }else {
+        for(var s = stp; s <= ed; s += stp) {
+            res.innerHTML += `${s}➡ `
+        }
     }
 }
