@@ -11,11 +11,12 @@ function contar() {
     } else if (stp <=0) {
         alert('[ERRO] Passo inválido, recalculando com o valor: 1')
         for(var s = str;s <= ed; s++) {
-            res.innerHTML += `➡${s} `
+            res.innerHTML += `\u{27A1}${s} `
         }
     }else {
         for(var s = stp; s <= ed; s += stp) {
-            res.innerHTML += `${s}➡ `
+            res.innerHTML += `${s}\u{27A1} `
         }
     }
+    res.innerHTML += `\u{1F3C1}`
 }
